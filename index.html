@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-
 <meta charset="UTF-8">
 <title>tane.co</title>
 
@@ -10,37 +9,37 @@
 body{
 margin:0;
 font-family:Arial;
-background:#F5EFE6;
+background:#f5efe6;
 }
+
+/* ÜST BAR */
 
 .header{
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:20px 40px;
-background:white;
+padding:20px 60px;
 }
 
 .logo{
-font-size:32px;
+font-size:28px;
 font-weight:bold;
 color:#6E1F2F;
 }
 
 .logo span{
 display:block;
-font-size:14px;
+font-size:12px;
 color:#444;
 }
 
 .search{
 display:flex;
-gap:10px;
 }
 
 .search input{
-padding:10px;
-width:250px;
+padding:8px;
+width:200px;
 border:1px solid #ccc;
 }
 
@@ -48,73 +47,55 @@ border:1px solid #ccc;
 background:#6E1F2F;
 color:white;
 border:none;
-padding:10px 20px;
+padding:8px 15px;
 cursor:pointer;
 }
 
-.menu{
+/* MENÜ */
+
+.navbar{
 display:flex;
+justify-content:center;
 gap:40px;
-padding:15px 40px;
 background:#6E1F2F;
-color:white;
+padding:15px;
 }
 
-.menu a{
+.navbar a{
 color:white;
 text-decoration:none;
 font-weight:bold;
 }
 
+/* HERO */
+
 .hero{
-height:400px;
-background-image:url("https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
-flex-direction:column;
-color:white;
-text-align:center;
+margin-top:40px;
 }
 
-.hero h1{
-font-size:50px;
-margin:0;
-color:white;
-text-shadow:2px 2px 6px rgba(0,0,0,0.7);
+.hero img{
+width:500px;
+border-radius:6px;
 }
 
-.hero p{
-font-size:22px;
-margin-top:10px;
-color:white;
-text-shadow:2px 2px 6px rgba(0,0,0,0.7);
-}
-
-.hero button{
-margin-top:20px;
-padding:15px 30px;
-border:none;
-background:#6E1F2F;
-color:white;
-font-size:18px;
-cursor:pointer;
-}
+/* KATEGORİLER */
 
 .categories{
 display:flex;
 justify-content:center;
 gap:30px;
-padding:60px;
+margin:60px;
 }
 
 .card{
-width:250px;
 background:white;
-padding:20px;
+width:220px;
 text-align:center;
+padding:20px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -123,72 +104,14 @@ width:100%;
 
 .card button{
 margin-top:10px;
-padding:10px 20px;
-border:none;
-background:#6E1F2F;
-color:white;
-cursor:pointer;
-}
-
-.menu{
-display:flex;
-justify-content:center;
-gap:30px;
-background:#6E1F2F;
-padding:15px;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.dropdown{
-position:relative;
-}
-
-.dropbtn{
 background:#6E1F2F;
 color:white;
 border:none;
-font-weight:bold;
+padding:10px;
 cursor:pointer;
-}
-
-.dropdown-content{
-display:none;
-position:absolute;
-top:35px;
-background:white;
-min-width:220px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-padding:15px;
-}
-
-.dropdown:hover .dropdown-content{
-display:block;
-}
-
-.dropdown-content a{
-display:block;
-color:#333;
-padding:5px 0;
-text-decoration:none;
-}
-
-.submenu strong{
-display:block;
-margin-top:10px;
-color:#6E1F2F;
-}
-
-.submenu-content{
-margin-left:10px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -206,92 +129,43 @@ tane.co
 <button>Ara</button>
 </div>
 
-<nav class="navbar">
+</div>
 
+<div class="navbar">
 <a href="#">Anasayfa</a>
-
-<div class="mega-menu">
-
-<button class="mega-button">Ürün Kategorisi</button>
-
-<div class="mega-content">
-
-<div class="mega-column">
-<h3>Çanta</h3>
-<a href="#">Boncuk Çanta</a>
-</div>
-
-<div class="mega-column">
-<h3>Ev</h3>
-<a href="#">Duvar Süsleri</a>
-<a href="#">Kapı Süsleri</a>
-<a href="#">Paspas</a>
-<a href="#">Saksı Kılıfı</a>
-<a href="#">Çerçeve</a>
-</div>
-
-<div class="mega-column">
-<h3>Düğün & Nişan</h3>
-<a href="#">Süsler</a>
-</div>
-
-<div class="mega-column">
-<h3>Kişiye Özel</h3>
-<a href="#">Anahtarlık</a>
-<a href="#">Bardak Altlığı</a>
-<a href="#">Bilgisayar Süsleri</a>
-<a href="#">Gözlük Altlığı</a>
-<a href="#">Yastık Kılıfı</a>
-</div>
-
-</div>
-
-</div>
-
+<a href="#">Ürün Kategorisi</a>
 <a href="#">Siparişlerim</a>
 <a href="#">Sepetim</a>
-
-</nav>
+</div>
 
 <div class="hero">
-
-<h1>tane.co Koleksiyonları</h1>
-<p>Özel El Yapımı Tasarımlar</p>
-
-<button>Koleksiyonu Keşfet</button>
-
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=60">
 </div>
 
 <div class="categories">
 
 <div class="card">
-
-<img src="https://via.placeholder.com/250">
-
+<img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=400&q=60">
 <h3>Boncuk Çanta</h3>
-
 <button>Ürünleri Gör</button>
-
 </div>
 
 <div class="card">
-
-<img src="https://via.placeholder.com/250">
-
+<img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=400&q=60">
 <h3>Ev Dekorasyonu</h3>
-
 <button>Ürünleri Gör</button>
-
 </div>
 
 <div class="card">
-
-<img src="https://via.placeholder.com/250">
-
+<img src="https://images.unsplash.com/photo-1608042314453-ae338d80c427?auto=format&fit=crop&w=400&q=60">
 <h3>Kişiye Özel</h3>
-
 <button>Ürünleri Gör</button>
+</div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=400&q=60">
+<h3>Düğün & Nişan</h3>
+<button>Ürünleri Gör</button>
 </div>
 
 </div>
